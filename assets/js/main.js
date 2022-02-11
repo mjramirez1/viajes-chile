@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    //popover function
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
     // Smooth scroll
     $("a").on('click', function (event) {
         if (this.hash !== "") {

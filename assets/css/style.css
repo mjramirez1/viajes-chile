@@ -1,6 +1,16 @@
 .bg-navbar {
     background: rgba(2, 0, 36, 0.452);
   }
+
+.title-viajes{
+
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+
+
+}
+
   
 .carousel-item{
     height: auto;
@@ -58,10 +68,13 @@
     width: 253px;
   }
 
+  h4{
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+  }
+
 .pie{
     background-color: deepskyblue;
-    text-align: left;
+
   }
-.rrss{
-  text-align: right;
-}

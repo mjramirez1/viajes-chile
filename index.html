@@ -6,15 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,19 +21,24 @@
 
 <body>
     <header class="fixed-top bg-navbar">
+        <!--navbar-->
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-expand lg navbar-dark">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">
                             <img src="assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top"
-                                alt="logo viajes Chile">
+                                alt="logo viajes Chile"> <span class="title-viaje">Viajes Chile</span>
                         </a>
+
+                        
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+                        
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
@@ -51,7 +47,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
+                                    <a class="nav-link" href="#quienes-somos">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#destacados">Destacados</a>
@@ -66,7 +62,7 @@
             </div>
         </div>
     </header>
-
+    <!--carousel-->
     <div id="carousel-inicial" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carousel-inicial" data-slide-to="0" class="active">
@@ -102,6 +98,8 @@
 
     <main class="bg-dark">
 
+        <!--cards con parrafos y icons-->
+
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -109,8 +107,6 @@
                         <h2 class="text-center mb-4 ">¿Quienes somos?</h2>
                         <hr>
                         <div class="row">
-
-
                             <div class="col-md-4">
                                 <div class="card mb-4 bg-dark">
                                     <div class="card-body">
@@ -131,8 +127,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="col-md-4">
                                 <div class="card mb-4 bg-dark">
                                     <div class="card-body">
@@ -156,7 +150,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="col-md-4">
                                 <div class="card mb-4 bg-dark">
@@ -191,6 +184,7 @@
         </div>
 
 
+        <!-- cards-->
 
         <div class="container">
             <div class="row">
@@ -283,62 +277,92 @@
             </div>
         </div>
 
-<!--Formulario typeform-->
+        <!--Formulario typeform-->
         <section id="contacto" class="bg-dark text-white py-4">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <h2 class="text-center">Contacto</h2>
+                
                         <form>
                             <div data-tf-widget="gJ31HJbs" data-tf-iframe-props="title=viajes chile"
                                 data-tf-medium="snippet" style="width:100%;height:400px;"></div>
                             <script src="//embed.typeform.com/next/embed.js"></script>
-                        </form>
+                        </form> 
                     </div>
                 </div>
             </div>
         </section>
 
+
+        <!--Verificar-->
         <section id="sec-informacion" class="py-4 d-none d-sm-block">
             <div class="container">
-
             </div>
         </section>
 
     </main>
 
-    <footer class="py-4 text-white text-left custom-footer pie">
+    <footer class="py-4 text-warning text-center pie">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h4>VIAJES CHILE</h4>
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-6 text-center">
+
+                            <span>
+                                <h4>VIAJES CHILE
+                            </span>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+
+                            <a target="self" href="https://github.com/" class="mr-3 text-white">
+                                <i class="fab fa-brands fa-github-square fa-2x custom-icon"></i>
+                            </a>
+
+                            <a target="self" href="https://www.linkedin.com/" class="mr-3 text-white">
+                                <i class="fab fa-brands fa-linkedin fa-2x custom-icon"></i>
+                            </a>
+
+                            <a target="self" href="https://twitter.com/" class="mr-3 text-white">
+                                <i class="fab fa-twitter-square fa-2x custom-icon"></i>
+                            </a>
+
+                            <a target="self" href="https://www.facebook.com/" class="mr-3 text-white">
+                                <i class="fab fa-facebook-square fa-2x custom-icon"></i>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
             </div>
 
-            <div class="row rrss">
-                <div class="row">
-
-                    <a target="self" href="https://github.com/" class="mr-3 text-white">
-                        <i class="fa-brands fa-github fa-2x 
-                        custom-icon"></i>
-                    </a>
-
-                    <a target="self" href="https://www.facebook.com/" class="mr-3 text-white">
-                        <i class="fab fa-facebook-square fa-2x custom-icon"></i>
-                    </a>
-                    <a target="self" href="https://www.instagram.com/" class="text-white">
-                        <i class="fab fa-instagram fa-2x custom-icon"></i>
-                    </a>
-                    <a target="self" href="https://twitter.com/" class="ml-3 text-white">
-                        <i class="fab fa-twitter-square fa-2x custom-icon"></i>
-                    </a>
-
-                </div>
-            </div>
         </div>
     </footer>
-    <!-- script -->
+
+
+    <!-- scripts -->
+    
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
